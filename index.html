@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--====== Title ======-->
+    <title>Travel | Booking</title>
+    <!--====== Favicon ======-->
+    <link rel="shortcut icon" href="/images/logo-image.jfif" type="image/x-icon">
+    <!--====== Output.css Link ======-->
+    <link rel="stylesheet" href="../dist/output.css">
+    <!--====== Remix Icon Link ======-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-white m-0 font-sans">
+    
+    <!--====== Header Section Starts Here ======-->
+    <header class="w-full h-auto relative z-10 flex flex-col overflow-hidden">
+    
+        <!-- Background Images -->
+        <div class="absolute inset-0 -z-10 hidden md:block">
+            <img src="/images/Decore header background image.png" class="absolute right-0 top-0 max-w-none w-150 lg:w-187.5 xl:w-225 object-contain" alt="decore header background image">
+                 
+            <img src="/images/header & main section background image.png" class="absolute right-10 top-32 w-100 lg:w-125 xl:w-150 object-contain" alt="header & main section background image">
+        </div>
+    
+        <!-- Navbar -->
+        <div class="flex items-center justify-between px-6 md:px-12 py-5 relative">
+    
+            <!-- Logo -->
+            <h1 class="text-3xl md:text-4xl text-black font-bold cursor-pointer">
+                Jadoo
+            </h1>
+    
+            <!-- Hamburger (Mobile Only) -->
+            <button id="menu-btn" class="md:hidden text-3xl">
+                <i class="ri-menu-line"></i>
+            </button>
+    
+            <!-- Navbar Links -->
+            <nav id="menu" class="absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent hidden md:flex flex-col md:flex-row items-center md:items-center text-black text-lg shadow-md md:shadow-none">
+    
+                <ul class="flex flex-col md:flex-row w-full md:w-auto text-center">
+                    <li class="px-5 py-3 md:py-0.5 hover:text-gray-500 cursor-pointer">Desitnations</li>
+                    <li class="px-5 py-3 md:py-0.5 hover:text-gray-500 cursor-pointer">Hotles</li>
+                    <li class="px-5 py-3 md:py-0.5 hover:text-gray-500 cursor-pointer">Flights</li>
+                    <li class="px-5 py-3 md:py-0.5 hover:text-gray-500 cursor-pointer">Bookings</li>
+                    <li class="px-5 py-3 md:py-0.5 hover:text-gray-500 cursor-pointer">Login</li>
+                    <li class="px-5 py-3 md:py-0.5 border md:border border-black rounded-sm cursor-pointer">Sign up</li>
+                    <li class="px-5 py-3 md:py-0.5 hover:text-gray-500 cursor-pointer">En <i class="ri-arrow-down-s-line"></i></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <!-- Hero Section -->
+        <div class="flex flex-col gap-4 px-6 md:px-12 mt-8 md:mt-16 max-w-2xl">
+    
+            <p class="text-orange-500 font-bold text-sm md:text-lg">
+                BEST DESTNATIONS AROUND THE WORLD
+            </p>
+    
+            <h1 class="text-blue-950 font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+                Travel,
+                <span class="relative inline-block">
+                    enjoy
+                    <img src="/images/black-staine-brush-grunge-banner-hand-drawn-splash-grunge-badge-brush-hand-drawn-black-free-png.png" class="absolute left-0 -bottom-2 w-full h-3 object-cover -z-10" alt="black-staine-brush">
+                </span>
+                <br class="hidden sm:block">
+                and live a new <br class="hidden sm:block">
+                and full life
+            </h1>
+    
+            <p class="font-medium text-black/60 mb-5 text-sm md:text-base">
+                Built Wicket longer admire do braton vanity itself do in it.
+                preferred to sportsmen it engrossed listening.
+                Park gate sell they west hard for the.
+            </p>
+    
+            <div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+                <button class="px-8 py-3 rounded-lg text-white text-lg bg-amber-500 font-medium shadow-amber-100 shadow-xl cursor-pointer">
+                    Find out more
+                </button>
+    
+                <div class="flex items-center gap-4 cursor-pointer">
+                    <p class="w-12 h-12 rounded-full bg-orange-600/80 shadow-xl shadow-orange-300 flex items-center justify-center">
+                        <i class="ri-play-large-fill"></i>
+                    </p>
+                    <p class="text-lg text-gray-500">Play Demo</p>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <!--====== Header Section Ends Here ======-->
+    
+    <!-- Toggle Script -->
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+    
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+
+
+    <!--====== Services Section Starts Here ======-->
+    <section class="w-full h-auto flex flex-col items-center justify-center px-5 lg:mt-60 md:mt-40 mt-20">
+    
+        <!-- Text Div -->
+        <div class="text-center">
+            <p class="text-xl font-medium text-gray-500">CATEGORY</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black/80">
+                We Offer Best Services
+            </h1>
+        </div>
+    
+        <!-- Cards Div -->
+        <div class="flex md:flex-row sm:flex-col flex-wrap items-center justify-center gap-12 my-20 w-full">
+    
+            <!-- Card One -->
+            <div class="group relative w-60 h-96 p-2 gap-6 rounded-2xl bg-white hover:shadow-2xl hover:shadow-gray-400 transition-all ease-in-out duration-500 flex flex-col items-center justify-center text-center">
+    
+                <!-- Background Image -->
+                <div class="absolute inset-0 -z-10">
+                    <img src="/images/cards-hover-images.svg" class="object-contain mt-80 absolute -left-8 hidden group-hover:block" alt="cards-hover-images">
+                </div>
+    
+                <div>
+                    <img src="/images/calculated-weather.svg" class="object-contain w-32 h-32" alt="calculated-weather">
+                </div>
+    
+                <h1 class="text-xl font-medium text-black/80">
+                    Calculated Weather
+                </h1>
+    
+                <p class="text-lg text-gray-500">
+                    Built Wicket longer admire do barton vanity itself do in it.
+                </p>
+            </div>
+    
+            <!-- Card Two -->
+            <div class="group relative w-60 h-96 p-2 gap-6 rounded-2xl bg-white hover:shadow-2xl hover:shadow-gray-400 transition-all ease-in-out duration-500 flex flex-col items-center justify-center text-center">
+    
+                <div class="absolute inset-0 -z-10">
+                    <img src="/images/cards-hover-images.svg" class="object-contain mt-80 absolute -left-8 hidden group-hover:block" alt="cards-hover-images">
+                </div>
+    
+                <div>
+                    <img src="/images/_best-flights.svg" class="object-contain w-32 h-32" alt="_best-flights">
+                </div>
+    
+                <h1 class="text-xl font-medium text-black/80">
+                    Best Flights
+                </h1>
+    
+                <p class="text-lg text-gray-500">
+                    Engrossed listening. Park gate sell they west hard for the.
+                </p>
+            </div>
+    
+            <!-- Card Three -->
+            <div class="group relative w-60 h-96 p-2 gap-6 rounded-2xl bg-white hover:shadow-2xl hover:shadow-gray-400 transition-all ease-in-out duration-500 flex flex-col items-center justify-center text-center">
+    
+                <div class="absolute inset-0 -z-10">
+                    <img src="/images/cards-hover-images.svg" class="object-contain mt-80 absolute -left-8 hidden group-hover:block" alt="cards-hover-images">
+                </div>
+    
+                <div>
+                    <img src="/images/local-events.png" class="object-contain w-32 h-32" alt="local-events">
+                </div>
+    
+                <h1 class="text-xl font-medium text-black/80">
+                    Local Events
+                </h1>
+    
+                <p class="text-lg text-gray-500">
+                    Barton vanity itself do in it. Prefferd to men it engrossed listening.
+                </p>
+            </div>
+    
+            <!-- Card Four -->
+            <div class="group relative w-60 h-96 p-2 gap-6 rounded-2xl bg-white hover:shadow-2xl hover:shadow-gray-400 transition-all ease-in-out duration-500 flex flex-col items-center justify-center text-center">
+    
+                <div class="absolute inset-0 -z-10">
+                    <img src="/images/cards-hover-images.svg" class="object-contain mt-80 absolute -left-8 hidden group-hover:block" alt="cards-hover-images">
+                </div>
+    
+                <div>
+                    <img src="/images/customization.svg" class="object-contain w-32 h-32" alt="customization">
+                </div>
+    
+                <h1 class="text-xl font-medium text-black/80">
+                    Customization
+                </h1>
+    
+                <p class="text-lg text-gray-500">
+                    We deliver outsourced aviation services for military customers
+                </p>
+            </div>
+    
+        </div>
+    
+    </section>
+    <!--====== Services Section Ends Here ======-->
+
+
+
+    <!--====== Destinations Section Starts Here ======-->
+    <section class="w-full h-auto flex flex-col items-center justify-center px-5 lg:mt-40 md:28 mt-16">
+    
+        <!-- Text Div -->
+        <div class="text-center">
+            <p class="text-xl font-medium text-gray-500">Top Selling</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black/80">
+                Top Destinations
+            </h1>
+        </div>
+    
+        <!-- Cards Div -->
+        <div class="flex md:flex-row sm:flex-col flex-wrap items-center justify-center gap-10 my-20 w-full">
+    
+            <!-- Card One -->
+            <div class="group relative w-full sm:w-90 h-110 max-w-sm overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-200 hover:shadow-lg hover:shadow-gray-300 flex flex-col cursor-pointer">
+    
+                <img src="/images/617ffa60cd811e0203d5a3a0_1635777119558-image7-p-1080.jpeg" class="object-cover w-full h-80" alt="Colosseum in Rome, Italy">
+    
+                <div class="flex flex-col gap-2.5 mt-3 p-4">
+                    <div class="flex justify-between">
+                        <h1 class="text-xl font-medium text-gray-500">Rome, Italy</h1>
+                        <p class="text-lg text-gray-500 font-medium">$5200</p>
+                    </div>
+    
+                    <div class="text-lg text-gray-500 flex gap-2">
+                        <i class="ri-navigation-fill"></i>
+                        <p>10 days trip</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card Two -->
+            <div class="group relative w-full sm:w-90 h-110 max-w-sm overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-200 hover:shadow-lg hover:shadow-gray-300 flex flex-col cursor-pointer">
+    
+                <img src="/images/617ffa60841d93bb905deac0_1635777119794-image16.jpg" class="object-cover w-full h-80" alt="City view of London, United Kingdom">
+    
+                <div class="flex flex-col gap-2.5 mt-3 p-4">
+                    <div class="flex justify-between">
+                        <h1 class="text-xl font-medium text-gray-500">London, UK</h1>
+                        <p class="text-lg text-gray-500 font-medium">$4200</p>
+                    </div>
+    
+                    <div class="text-lg text-gray-500 flex gap-2">
+                        <i class="ri-navigation-fill"></i>
+                        <p>12 days trip</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card Three -->
+            <div class="group relative w-full sm:w-90 h-110 max-w-sm overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-200 hover:shadow-lg hover:shadow-gray-300 flex flex-col cursor-pointer">
+    
+                <img src="/images/617ffa617aba0a9188ee945d_1635777119934-image4-p-1080.jpeg" class="object-cover w-full h-80" alt="Beautiful landscape view of Macedonia">
+    
+                <div class="flex flex-col gap-2.5 mt-3 p-4">
+                    <div class="flex justify-between">
+                        <h1 class="text-xl font-medium text-gray-500">Macedonia</h1>
+                        <p class="text-lg text-gray-500 font-medium">$15000</p>
+                    </div>
+    
+                    <div class="text-lg text-gray-500 flex gap-2">
+                        <i class="ri-navigation-fill"></i>
+                        <p>28 days trip</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    <!--====== Destinations Section Ends Here ======-->
+
+
+
+    <!--====== Informations Section Starts Here ======-->
+    <section class="w-full h-auto px-5 mt-28 flex flex-col lg:flex-row items-center justify-center gap-12">
+    
+        <!-- Text Main Div -->
+        <div class="w-full lg:w-1/2 h-auto p-2.5 flex flex-col gap-6">
+    
+            <h3 class="text-xl font-medium text-gray-500 cursor-text">
+                Easy and Fast
+            </h3>
+    
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black/90 cursor-text">
+                Book your Next Trip in 3 Easy steps
+            </h1>
+    
+            <!-- Step 1 -->
+            <div class="flex flex-row gap-5">
+                <img src="/images/617938d08573df8aa0b825af_icon-chosedestination.svg" class="mb-4 cursor-default" alt="Choose destination icon">
+    
+                <div class="flex flex-col">
+                    <h1 class="text-gray-500 text-lg font-bold cursor-text">
+                        Choose Destination
+                    </h1>
+                    <p class="text-lg text-gray-500 cursor-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Urna, tortor tempus.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Step 2 -->
+            <div class="flex flex-row gap-5">
+                <img src="/images/617938cec00b4023cfe65e13_icon-makepayment.svg" class="mb-4 cursor-default" alt="Make payment icon">
+    
+                <div class="flex flex-col">
+                    <h1 class="text-gray-500 text-lg font-bold cursor-text">
+                        Make Payment
+                    </h1>
+                    <p class="text-lg text-gray-500 cursor-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Urna, tortor tempus.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Step 3 -->
+            <div class="flex flex-row gap-5">
+                <img src="/images/617938cfc00b4049bee65e26_icon-reachairport.svg" class="mb-4 cursor-default" alt="Reach airport icon">
+    
+                <div class="flex flex-col">
+                    <h1 class="text-gray-500 text-lg font-bold cursor-text">
+                        Reach Airport
+                    </h1>
+                    <p class="text-lg text-gray-500 cursor-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Urna, tortor tempus.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- Image Section -->
+        <div class="w-full lg:w-1/2 h-auto p-2.5 relative flex items-center justify-center">
+    
+            <!-- Back Image -->
+            <div class="absolute -z-10">
+                <img src="/images/618103548b0c7818deb95002_trip-to-greece.png" class="rounded-2xl shadow-xl shadow-gray-200 w-72 sm:w-80 md:w-96" alt="Trip to Greece">
+            </div>
+    
+            <!-- Front Small Image -->
+            <div class="relative z-10">
+                <img src="/images/617938cf127bae00a44979c2_trip-to-rome.png" class="w-48 sm:w-56 md:w-64 rounded-xl mt-60 sm:mt-72 md:mt-80 ml-24 sm:ml-40 md:ml-60 shadow-md shadow-gray-200" alt="Trip to Rome">
+            </div>
+    
+        </div>
+    
+    </section>
+    <!--====== Informations Section Ends Here ======-->
+
+
+
+    <!--====== Peoples About Section Starts Here ======-->
+    <section class="w-full h-auto md:px-5 px-8 mt-28 flex flex-col lg:flex-row items-center justify-center gap-10">
+    
+        <!-- About Text Main Div -->
+        <div class="md:w-[40%] w-full h-auto p-2.5 flex flex-col gap-5">
+            <h3 class="text-xl font-medium text-gray-500 cursor-text">Testimonials</h3>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black/90 cursor-text font-mono">
+                What People Say About Us
+            </h1>
+        </div>
+        
+        <!-- Card About Main Div -->
+        <div class="md:w-[60%] w-full h-auto p-5 flex flex-col md:flex-row gap-5">
+    
+            <!-- Testimonial Card -->
+            <div class="relative w-full md:w-xl h-56 rounded-xl shadow-xl shadow-gray-300 flex flex-col justify-center p-5 gap-6 cursor-default bg-white">
+    
+                <p class="text-lg text-gray-500 cursor-text">
+                    “After going through a number of sites, I had to settle for Jadoo because honestly it was a no brainer trying someone else”
+                </p>
+    
+                <div>
+                    <h1 class="text-lg font-bold text-gray-500 cursor-text">Sarah Connor</h1>
+                    <p class="text-lg text-gray-500 cursor-text">Globetrotter</p>
+                </div>
+    
+                <!-- Avatar -->
+                <div class="absolute -top-10 -left-10 w-24 h-24 rounded-full cursor-default">
+                    <img src="/images/618c4301f6e7897b8952e8b3_avatar-woman.png" alt="Sarah Connor avatar" class="w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+    
+            <!-- Buttons -->
+            <div class="flex flex-row md:flex-col items-center justify-center gap-10 cursor-pointer">
+                <p class="text-3xl font-light"><i class="ri-arrow-up-s-line"></i></p>
+                <p class="text-3xl font-light"><i class="ri-arrow-down-s-line"></i></p>
+            </div>
+    
+        </div> 
+    
+    </section>
+    <!--====== Peoples About Section Ends Here ======-->
+
+
+
+    <!--====== Our Newsletter Section Starts Here ======-->
+    <section class="w-full px-4 md:px-10 py-16 relative">
+    
+        <!-- Right Top Floating Image -->
+        <img 
+            src="/images/61829084f89d5e3f298e80e8_send-now.png" alt="Decorative" class="absolute top-10 right-6 w-12 h-12 rounded-full object-cover z-50 cursor-default">
+    
+        <div class="relative max-w-6xl mx-auto bg-[#f8f9ff] rounded-[40px] overflow-hidden px-6 md:px-20 py-16">
+          
+            <!-- Decorative Circles Left -->
+            <div class="absolute -left-32 top-10 w-96 h-96 rounded-full border border-indigo-600 opacity-40"></div>
+            <div class="absolute -left-24 top-20 w-80 h-80 rounded-full border border-indigo-600 opacity-40"></div>
+            <div class="absolute -left-16 top-32 w-64 h-64 rounded-full border border-indigo-600 opacity-40"></div>
+            <div class="absolute -left-8 top-44 w-52 h-52 rounded-full border border-indigo-600 opacity-40"></div>
+        
+            <!-- Decorative Circles Right -->
+            <div class="absolute -right-32 bottom-10 w-96 h-96 rounded-full border border-indigo-600 opacity-40"></div>
+            <div class="absolute -right-24 bottom-20 w-80 h-80 rounded-full border border-indigo-600 opacity-40"></div>
+            <div class="absolute -right-16 bottom-32 w-64 h-64 rounded-full border border-indigo-600 opacity-40"></div>
+            <div class="absolute -right-8 bottom-44 w-52 h-52 rounded-full border border-indigo-600 opacity-40"></div>
+        
+            <!-- Content -->
+            <div class="relative z-10 text-center max-w-3xl mx-auto">
+              
+                <h2 class="text-xl md:text-3xl font-semibold text-gray-600 leading-snug">
+                   Subscribe to get information,<br class="hidden md:block">
+                   latest news and other interesting <br>
+                   offers about Cobham
+                </h2>
+        
+                <!-- Form -->
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                 
+                    <div class="flex items-center bg-white rounded-xl shadow-sm px-4 py-3 w-full sm:w-100">
+                        <p class="text-xl text-gray-500 font-light mr-3"><i class="ri-mail-line"></i></p>
+                        <input 
+                            type="email" 
+                            placeholder="Your email"
+                            class="w-full outline-none text-gray-600"
+                        >
+                    </div>
+           
+                    <button class="bg-[#ff7d68] hover:bg-[#ff6a52] cursor-pointer text-white font-medium px-8 py-3 rounded-xl transition duration-300">
+                      Subscribe
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <!--====== Our Newsletter Section Ends Here ======-->
+
+
+
+    <!--====== Our Footer Section Starts Here ======-->
+    <footer class="w-full h-auto px-6 py-12 flex flex-col flex-wrap md:my-20 my-10">
+
+        <!-- Main Div -->
+        <div class="md:flex md:flex-row sm:grid sm:grid-cols-1 flex-wrap md:justify-between md:items-start items-center justify-center">
+            <!-- Logo -->
+            <div class="flex-1 min-w-50 mb-6 md:mb-0">
+                <h1 class="text-5xl font-semibold mb-8 text-gray-900">Jadoo.</h1>
+                <p class="text-sm text-gray-500 leading-relaxed">
+                  Book your trip in minute, get full control for much longer.
+                </p>
+            </div>
+        
+            <!-- Columns -->
+            <div class="flex-1 min-w-37.5 mb-6 md:mb-0">
+                <h3 class="font-bold mb-4 text-gray-800 text-xl">Company</h3>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">About</a>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Careers</a>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Mobile</a>
+            </div>
+        
+            <div class="flex-1 min-w-37.5 mb-6 md:mb-0">
+                <h3 class="font-bold mb-4 text-gray-800 text-xl">Contact</h3>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Help / FAQ</a>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Press</a>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Affiliates</a>
+            </div>
+        
+            <div class="flex-1 min-w-37.5 mb-6 md:mb-0">
+                <h3 class="font-bold mb-4 text-gray-800 text-xl">More</h3>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Airline fees</a>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Airline</a>
+                <a href="#" class="block text-gray-600 text-lg mb-2 hover:text-gray-900">Low fare tips</a>
+            </div>
+        
+            <!-- Social & App -->
+            <div class="flex flex-col items-center justify-center min-w-50">
+                <div class="flex mb-4 gap-5">
+                    <p class="w-10 h-10 rounded-full bg-white shadow-md shadow-gray-300 flex items-center justify-center cursor-pointer"><i class="ri-facebook-fill"></i></p>
+                    <img src="/images/6182d0e504bd110c32a33720_social-instagram.png" alt="Instagram" class="w-10 h-10 rounded-full cursor-pointer">
+                    <p class="w-10 h-10 rounded-full bg-white shadow-md shadow-gray-300 flex items-center justify-center cursor-pointer"><i class="ri-twitter-fill"></i></p>
+                </div>
+                <p class="mb-3 text-gray-800 font-medium">Discover our app</p>
+                <div class="flex flex-row">
+                    <img src="/images/617938ce9e2702000e6cd442_Google-Play.svg" alt="Google Play" class="w-32">
+                    <img src="/images/617938ce5c0563f505c2699e_Play-Store.svg" alt="App Store" class="w-32">
+                </div>
+            </div>
+        </div> 
+        <!-- CopyRight -->
+        <div class="text-center text-gray-400 text-sm mt-16">All rights reserved @jadoo.co</div>
+
+    </footer>
+    <!--====== Our Footer Section Ends Here ======-->
+    
+    
+    
+    <!--====== Fixed Webflow ======-->
+    <div class="flex flex-row items-center justify-center bg-white shadow-md shadow-gray-300 gap-2 bottom-3 right-3 px-2.5 py-1 border border-gray-100 rounded-lg z-50 fixed cursor-pointer">
+        <img src="/images/webflow-badge-icon.f67cd735e3.svg" alt="webflow-badge-icon">
+        <p class="text-sm">Made in Webflow</p>
+    </div>
+
+</body>
+</html>
